@@ -3,7 +3,6 @@ services:
   - type: web
     name: fastapi-http-app
     env: python
-    region: us  # Change this to your preferred region (e.g., eu for Europe)
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
