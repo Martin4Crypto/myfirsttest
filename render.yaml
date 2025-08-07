@@ -8,7 +8,6 @@ services:
       pip install --upgrade pip
       pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port 8000
-    runtime: python3
     envVars:
       - key: BEARER_TOKEN
         value: <your-bearer-token-here> # Replace with your actual bearer token or set this as a secret in Render
